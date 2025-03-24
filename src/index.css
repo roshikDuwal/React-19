@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+*{
+
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* html{
+  font-size: 62.5%;
+} */
+
+@theme{
+  --color-main:#0062ff;
+}
+
+
+
+
+
