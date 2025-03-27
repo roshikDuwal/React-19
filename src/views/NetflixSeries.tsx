@@ -42,6 +42,12 @@ const NetflixSeries = () => {
   //Lift State up-React
     // pattern to move child component(props) into common parent component so that multiple child component can be share and syncronized
 
+    //Controlled vs UnControlled Form Handling
+
+  //Form
+
+    //Hooks
+
 
 
   return (

@@ -1,4 +1,4 @@
-import Todo from "./views/project/Todo"
+import Registration from "./views/form/Registration"
 
 
 const App = () => {
@@ -10,7 +10,9 @@ const App = () => {
       {/* Hooks  */}
       {/* <UseState/> */}
       {/* <LiftStateUp/> */}
-      <Todo/>
+      {/* <Todo/> */}
+
+      <Registration/>
 
     </div>
   )
