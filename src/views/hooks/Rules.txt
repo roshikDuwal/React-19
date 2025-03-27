@@ -1,0 +1,4 @@
+-Hook start with use Prefix.
+-hooks can be used at the top level of your component.
+-Cannot be used inside loops,conditions.
+-Cannot be call inside regular java function

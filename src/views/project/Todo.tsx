@@ -36,8 +36,12 @@ const TodoForm = ({
       todoList.length === 0 ? 1 : todoList[todoList.length - 1].key + 1;
 
     setTodList((prev: any) => [...prev, { key: newKey, todo: inputValue }]);
+ 
+
     setInputValue("");
   };
+
+  localStorage.setItem("todo_data",JSON.stringify(todoList));
 
   return (
     <div>
@@ -119,7 +123,10 @@ const TodoDisplay = ({ todoList, setTodList }: TodoDisplayProps) => {
 
 const Todo = () => {
   const [inputValue, setInputValue] = useState<string>("");
-  const [todoList, setTodList] = useState<dataTypes[]>([]);
+  const [todoList, setTodList] = useState<dataTypes[]>(()=>{
+    const rawTodos=localStorage.getItem("todo_data");
+    return rawTodos ? JSON.parse(rawTodos) : [];
+  });
   const [dateTime, setDateTime] = useState<string>("");
 
   const getDateTime = () => {
